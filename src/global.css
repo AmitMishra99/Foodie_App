@@ -9,6 +9,7 @@
         @apply pb-0.5 
         border-b-2 
         border-b-[#49557e]
+        
 }
 
 @keyframes fadeIn{
@@ -21,4 +22,11 @@
 }
 .animation{
         animation: fadeIn 4s;
+}
+.scrollbar-hide::-webkit-scrollbar{
+        display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* for Internet Explorer and Edge*/
+  scrollbar-width: none;    /* for Firefox */
 }
