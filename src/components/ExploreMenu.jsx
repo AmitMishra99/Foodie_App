@@ -9,13 +9,13 @@ const ExploreMenu = ({category , setCategory }) => {
         {menu_list.map((item , idx)=>{
                 return (
                         <div onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)}  key={idx} className="shrink-0">
-                                <img className={`cursor-pointer rounded-[50%] object-cover h-[8.4vw] ${category === item.menu_name ? "border-4 border-[tomato] p-[2px]" : ""}`} src={item.menu_image} alt="" />
+                                <img className={`cursor-pointer rounded-[50%] object-cover h-[8.2vw] ${category === item.menu_name ? "border-4 border-[tomato] p-[2px]" : ""}`} src={item.menu_image} alt="" />
                                 <p className="mt-2.5  text-[#747474] text-[1.4vw]  ">{item.menu_name}</p>
                         </div>
                  )
         })}
       </div>
-      <hr className="bg-[#e2e2e2] border-none my-[10px] h-0.5 " />
+      <hr className="bg-[#d1a1a1] border-none my-[10px] h-0.5 " />
 
     </div>
   )

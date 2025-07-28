@@ -23,10 +23,19 @@
 .animation{
         animation: fadeIn 4s;
 }
+.animation2{
+        animation: fadeIn 2s;
+}
 .scrollbar-hide::-webkit-scrollbar{
         display: none;
 }
 .scrollbar-hide {
   -ms-overflow-style: none; /* for Internet Explorer and Edge*/
   scrollbar-width: none;    /* for Firefox */
+}
+.box-shadow{
+        box-shadow: 0px 0px 10px black;
+}
+.rounded-top-custom {
+  border-radius: 15px 15px 0px 0px;
 }
