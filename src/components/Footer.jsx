@@ -16,12 +16,12 @@ const Footer = () => {
         </div>
         <div className="footer">
                 <h2 className="text-[25px]">COMPANY</h2>
-                <dib>
+                <div>
                         <h2>Home</h2>
                         <h2>About us</h2>
                         <h2>Delivary</h2>
                         <h2>Privacy policy</h2>
-                </dib>
+                </div>
         </div>
         <div className="footer">
                 <h2 className="text-[25px]" >GET IN TOUCH</h2>

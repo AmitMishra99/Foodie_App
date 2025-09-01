@@ -1,17 +1,17 @@
-import { useContext } from "react";
+import { useContext , useState } from "react";
 import { StoreContext } from "../context/Context";
 import FoodItem from "./FoodItem";
 
 const FoodDisplay = ({category}) => {
   const { food_list } = useContext(StoreContext);
-  // const [list, setList] = useState(food_list);
-  // const [search, setSearch] = useState("");
+  const [list, setList] = useState(food_list);
+  const [search, setSearch] = useState("");
 
   return (
     <div className="mt-[30px] p-2 ">
       <div className="flex items-center justify-between mb-[50px]">
 
-        {/* <div>
+        <div>
           <input
             placeholder="Enter your favourite dish 😋"
             className=" border-1 p-3 w-[400px] rounded-[50px] mr-[10px]"
@@ -33,7 +33,7 @@ const FoodDisplay = ({category}) => {
           >
             Search
           </button>
-        </div>
+        </div> 
 
         <button
           onClick={() => {
@@ -42,11 +42,11 @@ const FoodDisplay = ({category}) => {
           className="p-3 bg-[#e7dcdc] text-[20px] text-[#262626] rounded-[50px] border-1"
         >
           Top rated dishes{" "}
-        </button> */}
+        </button>
 
       </div>
       <div className="grid grid-cols-3 mt-[30px] gap-x-[60px] gap-y-[60px] ">
-        {food_list.map((item, idx) => {
+        {list.map((item, idx) => {
           if(category==="All" || category===item.category){
             return (
             <FoodItem
